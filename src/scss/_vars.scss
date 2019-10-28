@@ -1,0 +1,26 @@
+$green: #9baf6d;
+$subgreen: #5d6942;
+$text: #afc67b;
+$bgc: #212121;
+
+
+@mixin bgimg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
+
+@mixin title {
+  font-family: "GoodDogCool";
+  font-weight: 400;
+}
+
+@mixin f400 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin f700 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}

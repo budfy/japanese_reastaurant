@@ -1,14 +1,122 @@
-@import 'global';
-@import 'fonts';
 @import 'vars';
+@import 'fonts';
+@import 'global';
+
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    START CODE
 //
 //-----------------------------------------------------------------------------------------------------------
+@import 'header';
 
+.toppage {
+  min-height: 100vh;
+  width: 100vw;
+  @include bgimg;
+  display: flex;
+  justify-content: flex-end;
+  align-items: top;
 
+  &__wrapper {
+    margin-right: 10vw;
+    margin-top: 21vh;
+  }
 
+  &logo {
+    margin-bottom: 112px;
+  }
+
+  &__title {
+    font-size: 4vw;
+    @include f700;
+    text-transform: uppercase;
+    color: $green;
+    line-height: 6vh;
+    margin-bottom: 15vh;
+
+    h2 {
+      @include f400;
+      margin-bottom: 3vh;
+      color: $text;
+      font-size: 5vw;
+    }
+  }
+
+  &__link {
+    font-size: 2.5vw;
+    @include f400;
+    text-transform: uppercase;
+    color: $text;
+    background-color: rgba(93, 105, 66, 0.5);
+    padding: 30px 27px;
+    transition: all .3s;
+    &:hover{
+      background-color: $green;
+      color: white;
+    }
+  }
+}
+
+.description{
+  &__wrapper{
+    min-height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+
+  &__content{
+    max-width: 50%;
+    padding-left: 100px;
+    padding-right: 83px;
+    
+    &-title{
+      @include title;
+      font-size: 3vw;
+      color: $text;
+      display: block;
+    }
+
+    &-text{
+      font-size: 1.5vw;
+      line-height: 30px;
+      color: white;
+    }
+  }
+
+  &__bg {
+    height: 100%;
+    min-height: 490px;
+    min-width: 50%;
+    @include bgimg;
+    background-position: left center;
+    background-size: 134%;
+  }
+}
+
+.priorities{
+  background-color: rgba(78, 83, 66, .8);
+  
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 0;
+  }
+
+  &__inner{
+    width: 310px;
+
+    &-title {
+      @include title;
+      font-size: 2.5vw;
+      margin-top: 26px;
+      margin-bottom: 33px;
+    }
+
+  }
+}
 
 
 
