@@ -1,7 +1,9 @@
 .header {
-  position: fixed;
+  position: absolute;
+  top: 0;
   z-index: 1;
   width: 100vw;
+  transition: all .5s;
 
   &__wrapper {
     display: flex;
@@ -32,6 +34,19 @@
           background-color: $green;
         }
       }
+    }
+  }
+}
+
+.scrolled{
+  position: fixed;
+
+  .header__wrapper{
+    background-color: rgba(255, 255, 255, .3);
+    padding: 10px 15px;
+
+    img{
+      height: 50px;
     }
   }
 }

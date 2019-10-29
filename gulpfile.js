@@ -125,7 +125,7 @@ let gulp = require ('gulp'),
           server: {
               baseDir: "build/"
           },
-          browser: ["chrome"],
+          browser: ["firefox"],
           //tunnel: "moderno",
           host: "192.168.0.103"
       });
