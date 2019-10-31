@@ -9,6 +9,14 @@ $(function(){
         $('.header').removeClass('scrolled');
         $('.header__logo>a>img').addClass('off');
     }
-  })
+  });
+
+  $(function() {
+
+    $('input, select').styler({
+      locale: 'en',
+    });
+  
+  });
 
 });

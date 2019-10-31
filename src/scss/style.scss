@@ -166,22 +166,22 @@
         text-align: center;
       }
 
-      &.leftside__item{
+      &.leftside__item {
         flex-direction: row;
       }
 
-      &.rightside__item{
+      &.rightside__item {
         flex-direction: row-reverse;
       }
 
-      .product__item-title{
+      .product__item-title {
         @include title;
         color: $text;
         font-size: 29px;
         margin-bottom: 25px;
       }
 
-      .product__item-text{
+      .product__item-text {
         @include f400;
         font-size: 13px;
         color: #e8e8e8;
@@ -189,7 +189,7 @@
         margin: 20px 0;
       }
 
-      .product__item-price{
+      .product__item-price {
         @include title;
         font-size: 25px;
         color: #e8e8e8;
@@ -199,6 +199,240 @@
   }
 }
 
+.motto {
+  background-color: #4e5342;
+
+  &__wrapper {
+    max-width: 700px;
+    padding: 100px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include title;
+    color: $text;
+    font-size: 42px;
+  }
+
+  &__text {
+    color: #dcdcdc;
+    @include f400;
+    font-size: 21px;
+    margin-bottom: 50px;
+  }
+
+  &__images {
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.discover {
+  background-image: url(../img/motto-bg.jpg);
+  @include bgimg;
+  background-position: center top;
+  padding-top: 238px;
+  padding-bottom: 889px;
+
+  &__content {
+    background-color: #4e5342;
+    text-align: center;
+  }
+
+  &__title {
+    @include title;
+    font-size: 71px;
+    padding-top: 60px;
+
+    span {
+      display: block;
+      @include f300;
+      color: #eaeaea;
+      text-transform: uppercase;
+      font-size: 46px;
+      line-height: 63px;
+      padding-top: 15px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: 430px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 80px;
+    margin-bottom: 55px;
+
+    &-icon {
+      border-radius: 50%;
+      min-width: 81px;
+      height: 81px;
+      background-color: rgba(231, 231, 231, .8);
+      margin-right: 10px;
+
+      img {
+        margin: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-title {
+      @include title;
+      font-size: 25px;
+      margin-bottom: 14px;
+    }
+
+    &-text {
+      @include f400;
+      font-size: 16px;
+    }
+
+    &-price {
+      @include title;
+      font-size: 21px;
+    }
+  }
+}
+
+.book {
+  &__wrapper{
+    margin-bottom: 71px;
+  }
+
+  &__title {
+    @include title;
+    font-size: 77px;
+    padding-top: 46px;
+    text-align: center;
+    margin-bottom: 38px;
+    line-height: 77px;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .form__btn-wrapper {
+      width: 100%;
+      text-align: center;
+      button {
+        margin: 0 auto;
+        width: 240px;
+        background-color: transparent;
+        color: white;
+        border-radius: 8px;
+        border: 2px solid #ffffff;
+        height: 33px;
+        text-transform: uppercase;
+        @include f700;
+        font-size: 17px;
+      }
+    }
+  }
+
+  &__form-box {
+    width: 240px;
+
+    label {
+      position: relative;
+      span {
+        display: block;
+        color: white;
+        @include f700;
+        font-size: 13px;
+        padding-bottom: 11px;
+      }
+      input, .jq-selectbox, .styler, select{
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        border-radius: 8px;
+        border: 2px solid #ffffff;
+        padding: 10px;
+        outline: none;
+        height: 33px;
+        margin-bottom: 45px;
+      }
+
+      input[type=date]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        display: none;
+      }
+
+      input[type=time]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        display: none;
+      }
+
+      input[type=date]::-webkit-calendar-picker-indicator{
+        display: none;
+      }
+
+      .jq-selectbox__select{
+        line-height: 17px;
+        position: relative;
+        margin-top: -5px;
+      }
+
+      .jq-selectbox__trigger-arrow::before{
+        content:"\f0d7";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #fff;
+        font-family: 'icomoon';
+      }
+
+      .jq-selectbox__dropdown{
+        width: 100%;
+        border-radius: 8px;
+        border: 2px solid #ffffff;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        background-color: $bgc;
+      }
+    }
+
+    .date::before{
+      content: '\e901';
+    }
+
+    .time::before{
+      content: '\e900';
+    }
+
+    .date::before, .time::before{
+      font-family: 'icomoon';
+      position: absolute;
+      top: 40px;
+      right: 10px;
+    }
+  }
+}
+
+.menu{
+  &__bg{
+    @include bgimg;
+    width: 100vw;
+    height: 864px;
+  }
+}
 
 //-----------------------------------------------------------------------------------------------------------
 //
