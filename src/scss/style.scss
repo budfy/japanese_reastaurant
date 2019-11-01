@@ -306,7 +306,7 @@
 }
 
 .book {
-  &__wrapper{
+  &__wrapper {
     margin-bottom: 71px;
   }
 
@@ -330,6 +330,7 @@
     .form__btn-wrapper {
       width: 100%;
       text-align: center;
+
       button {
         margin: 0 auto;
         width: 240px;
@@ -350,6 +351,7 @@
 
     label {
       position: relative;
+
       span {
         display: block;
         color: white;
@@ -357,7 +359,11 @@
         font-size: 13px;
         padding-bottom: 11px;
       }
-      input, .jq-selectbox, .styler, select{
+
+      input,
+      .jq-selectbox,
+      .styler,
+      select {
         width: 100%;
         background-color: transparent;
         color: white;
@@ -379,18 +385,18 @@
         display: none;
       }
 
-      input[type=date]::-webkit-calendar-picker-indicator{
+      input[type=date]::-webkit-calendar-picker-indicator {
         display: none;
       }
 
-      .jq-selectbox__select{
+      .jq-selectbox__select {
         line-height: 17px;
         position: relative;
         margin-top: -5px;
       }
 
-      .jq-selectbox__trigger-arrow::before{
-        content:"\f0d7";
+      .jq-selectbox__trigger-arrow::before {
+        content: "\f0d7";
         position: absolute;
         top: 0px;
         right: 0px;
@@ -398,7 +404,7 @@
         font-family: 'icomoon';
       }
 
-      .jq-selectbox__dropdown{
+      .jq-selectbox__dropdown {
         width: 100%;
         border-radius: 8px;
         border: 2px solid #ffffff;
@@ -409,15 +415,16 @@
       }
     }
 
-    .date::before{
+    .date::before {
       content: '\e901';
     }
 
-    .time::before{
+    .time::before {
       content: '\e900';
     }
 
-    .date::before, .time::before{
+    .date::before,
+    .time::before {
       font-family: 'icomoon';
       position: absolute;
       top: 40px;
@@ -426,13 +433,156 @@
   }
 }
 
-.menu{
-  &__bg{
+.menu {
+  &__bg {
     @include bgimg;
     width: 100vw;
     height: 864px;
   }
+
+  &__wrapper {
+    background-color: #4e5342;
+    width: 100%;
+    padding-bottom: 122px;
+  }
+
+  &__title {
+    @include title;
+    font-size: 77px;
+    line-height: 60px;
+    color: $text;
+    text-align: center;
+    margin: 0;
+    padding: 60px 0;
+
+    span {
+      display: block;
+      @include f300;
+      color: #eaeaea;
+      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 63px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+
+  &__item {
+    background-color: #e7e7e7;
+    max-width: 339px;
+    width: 100%;
+    color: #555555;
+
+    img {
+      object-fit: cover;
+      max-height: 301px;
+    }
+
+    &-content {
+      padding: 25px 20px;
+    }
+
+    .category {
+      font-size: 14px;
+      line-height: 33px;
+      letter-spacing: 1.05px;
+      @include f700;
+    }
+
+    .content__title {
+      color: #4f4e4e;
+      margin: 0;
+      padding: 22px 0 7px;
+      font-size: 18px;
+      @include f700;
+    }
+
+    .content__text {
+      margin: 0;
+      padding: 0;
+      font-size: 17px;
+      color: #4f4e4e;
+      padding-bottom: 26px;
+    }
+
+    .content__link {
+      color: #555555;
+      @include f700;
+      text-transform: uppercase;
+      line-height: 33px;
+      letter-spacing: 1.05px;
+      font-size: 14px;
+      border-bottom: 7px solid $text;
+      transition: all .5s;
+      padding-bottom: 5px;
+
+      &:hover {
+        color: $text;
+      }
+    }
+  }
 }
+
+.social {
+  background-color: #212121;
+  color: $text;
+
+  &__wrapper {
+    padding: 85px 0 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+  }
+
+  &__upper-text {
+    @include title;
+    font-size: 83px;
+    padding: 0 0 28px;
+    display: block;
+  }
+
+  &__text {
+    @include f400;
+    font-size: 19px;
+  }
+
+  &__title {
+    @include title;
+    font-size: 29px;
+    line-height: 33px;
+  }
+
+  ul {
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+    margin: 0 auto;
+    li{
+    display: inline-block;
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    background-color: #e7e7e7;
+    position: relative;
+    font-family: 'icomoon';
+    a::before{
+      font-family: 'icomoon';
+      color: #212121;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+    }
+}}
+
+
+}
+
+@import 'footer';
 
 //-----------------------------------------------------------------------------------------------------------
 //
