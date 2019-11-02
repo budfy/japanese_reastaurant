@@ -128,7 +128,7 @@ let gulp = require ('gulp'),
               baseDir: "build/"
           },
           browser: ["chrome"],
-          tunnel: "moderno",
+          //tunnel: "moderno",
           host: "192.168.0.103"
       });
     });

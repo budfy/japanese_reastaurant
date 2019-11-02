@@ -27,23 +27,23 @@
   }
 
   &__title {
-    font-size: 4vw;
+    font-size: 47px;
     @include f700;
     text-transform: uppercase;
     color: $green;
-    line-height: 6vh;
-    margin-bottom: 15vh;
+    line-height: 50px;
+    margin-bottom: 150px;
 
     h2 {
       @include f400;
-      margin-bottom: 3vh;
+      margin-bottom: 40px;
       color: $text;
-      font-size: 5vw;
+      font-size: 57px;
     }
   }
 
   &__link {
-    font-size: 2.5vw;
+    font-size: 36px;
     @include f400;
     text-transform: uppercase;
     color: $text;
@@ -108,6 +108,7 @@
 
   &__inner {
     width: 310px;
+    margin: 0 30px;
 
     &-title {
       @include title;
@@ -153,6 +154,7 @@
     .product__item {
       max-width: 50%;
       display: flex;
+      min-width: 540px;
 
       img {
         height: 274px;
@@ -272,7 +274,7 @@
     justify-content: flex-start;
     text-align: left;
     min-height: 80px;
-    margin-bottom: 55px;
+    margin: 0 30px 55px;
 
     &-icon {
       border-radius: 50%;
@@ -428,7 +430,10 @@
       font-family: 'icomoon';
       position: absolute;
       top: 40px;
-      right: 10px;
+      right: 4px;
+      background-color: $bgc;
+      height: 24px;
+      width: 17px;
     }
   }
 }
